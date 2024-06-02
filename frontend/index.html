@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Main page</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div class="main">
+        <div class="content">
+          <img id="img" src="images/sample.jpg" alt="moroccan doctor" class="content_image">
+        </div>
+        <p class="content_text">سال الطبيب ماتسال المجرب</p>
+
+      </div>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="images/logo_yaklabass.png" alt="">YakLabass
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span href="index.html"class="navlink">Connect</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="login.html" class="nav_link sublink">Login Page</a>
+              <a href="register.html" class="nav_link sublink">Register Page</a>
+            </ul>
+          </li>
+          <!-- end -->
+
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-grid-alt"></i>
+              </span>
+              <span class="navlink">Appointments</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="appointment.html" class="nav_link sublink">Appointment Page</a>
+              <a href="doctors.html" class="nav_link sublink">Doctor Page</a>
+            </ul>
+          </li>
+          <!-- end -->
+        </ul>
+
+        <ul class="menu_items">
+          <div class="menu_title menu_editor"></div>
+          <!-- duplicate these li tag if you want to add or remove navlink only -->
+          <!-- Start -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxl-facebook"></i>
+              </span>
+              <span class="navlink">Facebook</span>
+            </a>
+          </li>
+          <!-- End -->
+
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxl-instagram"></i>
+              </span>
+              <span class="navlink">Instagram</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxl-linkedin"></i>
+              </span>
+              <span class="navlink">LinkedIn</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxl-twitter"></i>
+              </span>
+              <span class="navlink">X (Ex - Twitter)</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main content -->
+    
+
+    <!-- JavaScript -->
+    <script src="./styles/index.js"></script>
+  </body>
+</html>
