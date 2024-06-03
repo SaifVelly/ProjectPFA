@@ -27,11 +27,17 @@ sidebar.addEventListener("mouseleave", () => {
 
 darkLight.addEventListener("click", () => {
   body.classList.toggle("dark");
+  const dd = document.getElementsByClassName("content_text")[0]
   if (body.classList.contains("dark")) {
     document.setI
     darkLight.classList.replace("bx-sun", "bx-moon");
+    dd.style.color="white";
+    dd.style.border="solid 3px white"
   } else {
     darkLight.classList.replace("bx-moon", "bx-sun");
+    dd.style.color="black";
+    dd.style.border="solid 3px black"
+
   }
 });
 

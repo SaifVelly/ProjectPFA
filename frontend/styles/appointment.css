@@ -1,67 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    background-color: lightblue;
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
+
+/* Header and navigation bar */
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 100px;
-    height: 80px;
-    font-size: 30px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
 }
+
 .navBar ul {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.navBar ul li {
+  margin: 0 15px;
 }
 
 .navBar ul li a {
-    display: block;
-    padding: 10px 30px;
-    color: lightcoral;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .navBar ul li a:hover {
-    background-color: white;
-    color: lightblue;
-    border-radius: 50px;
+  background-color: #007bff;
+  color: #fff;
 }
-h1,h3{
-    text-align: center;
-    color: lightcoral;
-    margin-bottom: 20px;
-}
-table{
-    border-collapse: collapse;
-    width: 80%;
-    margin: auto;
-  }
-  td, th {
-      border: 1px solid lightcoral;
-      text-align: center;
-      padding: 8px;
-      height: 30px;
-    }
-  tr:nth-child(even) {
-     background-color: #333;
-  }  
- 
 
-  .cancelAppointment,.videoCall{
-    border-radius: 10px;
-    background-color: lightcoral;
-    padding: 10px 20px;
-    color: lightblue;
-    font-size: 15px;
-    border: 1px solid lightcoral;
-  }
-  .cancelAppointment:hover,.videoCall:hover{
-    background-color: lightblue;
-    color: lightcoral;
-    border: 1px solid lightcoral;
-    cursor: pointer;
-  }
+/* Page title */
+h1 {
+  margin-top: 80px; /* Space for the fixed header */
+  color: #333;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Appointment display container */
+#displayAppointment {
+  width: 90%;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px auto;
+  overflow: auto;
+  height: 100%;
+}
+
+/* Individual appointment styles */
+.appointment {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.appointment:last-child {
+  border-bottom: none;
+}
+
+.appointment h2 {
+  font-size: 24px;
+  color: #007bff;
+  margin: 0;
+}
+
+.appointment p {
+  margin: 5px 0;
+  color: #555;
+}
+td, th {
+  border: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  padding: 8px;
+  height: 30px;
+}
+
+table{
+  margin-left: 100px;
+  width: 85%;
+}

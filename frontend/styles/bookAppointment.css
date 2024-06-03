@@ -1,73 +1,92 @@
-*{
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    background-color: lightblue;
-}
-header {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    padding: 0px 100px;
-    height: 80px;
-    font-size: 30px;
-}
-.navBar ul {
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Header and navigation bar */
+  header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navBar ul {
     display: flex;
-}
-
-.navBar ul li a {
-    display: block;
-    padding: 10px 30px;
-    color: lightcoral;
-}
-
-.navBar ul li a:hover {
-    background-color: white;
-    color: lightblue;
-    border-radius: 50px;
-}
-h1,h3{
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .navBar ul li {
+    margin: 0 15px;
+  }
+  
+  .navBar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navBar ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Page title */
+  h1 {
+    color: #333;
     text-align: center;
-    color: lightcoral;
+    font-size: 32px;
     margin-bottom: 20px;
-}
-
-#mainBody{
-    display: grid;
-    margin: auto;
-    grid-template-columns: repeat(1,1fr);
-    gap:20px;
-    text-align: center;
-    
-}
-#inputdate{
-    padding: 10px 60px;
-    font-size: 15px;
-    border-radius: 10px;
-    border: 1px solid lightcoral;
-    color: lightcoral;
-}
-#slotSelect{
-    padding: 10px 0px;
-    font-size: 15px;
-    border-radius: 10px;
-    color: lightcoral;
-    border: 1px solid lightcoral;
-}
-#bookAppointment{
-    padding: 10px 50px;
-    font-size: 15px;
-    border-radius: 10px;
-    border: 1px solid lightcoral;
-    background-color: lightcoral;
-    color: lightblue;
-}
-#bookAppointment:hover{
-    background-color: lightblue;
-    color: lightcoral;
+  }
+  
+  /* Main Body Section (assuming this replaces the searchDoctor section) */
+  #mainBody {
+    display: flex; /* Change from grid to flex for vertical layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    gap: 20px; /* Add spacing between elements */
+  }
+  
+  /* Specific styles for input, select, and button elements within #mainBody */
+  #mainBody input,
+  #mainBody select,
+  #mainBody button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #mainBody button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
     cursor: pointer;
-}
+    transition: background-color 0.3s;
+  }
+  
+  #mainBody button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Remove doctor container and individual doctor styles as they are not relevant for this page */
+  
+  
