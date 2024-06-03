@@ -1,91 +1,122 @@
-*{
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
+
+/* Header and navigation bar */
 header {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 100px;
-    height: 80px;
-    font-size: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
 }
+
 .navBar ul {
     display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.navBar ul li {
+    margin: 0 15px;
 }
 
 .navBar ul li a {
-    display: block;
-    padding: 10px 30px;
-    color: lightcoral;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navBar ul li a:hover {
-    background-color: white;
-    color: lightblue;
-    border-radius: 50px;
+    background-color: #007bff;
+    color: #fff;
 }
-h1{
+
+/* Page title */
+h1 {
+    margin-top: 80px; /* Space for the fixed header */
+    color: #333;
     text-align: center;
-    color: lightcoral;
+    font-size: 32px;
     margin-bottom: 20px;
 }
+
+/* Role selection buttons */
 .selectRole {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-.selectRole button{
+
+.selectRole button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
     padding: 10px 20px;
-    border: 1px solid lightcoral;
-    border-radius: 10px;
-    background-color: lightcoral;
-    color: lightblue;
-    font-size: 20px;
-    margin-left: 10px;
-}
-.selectRole button:hover{
-    background-color: lightblue;
-    color: lightcoral;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
- .patientDetail form{
-    width: 40%;
-    border: 1px solid lightcoral;
-    text-align: center;
+
+.selectRole button:hover {
+    background-color: #0056b3;
+}
+
+/* Form container */
+.patientDetail, .doctorDetail {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+/* Form styles */
+form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    padding: 30px;
-    margin-top: 20px;
-    display: none;
- }
- .patientDetail form input{
-    margin-bottom: 20px;
-    color: lightcoral;
-    font-size: 20px;
 }
- .doctorDetail form{
-    width: 40%;
-    border: 1px solid lightcoral;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    padding: 30px;
-    margin-top: 20px;
-    display: none;
- }
- .doctorDetail form input,select{
+
+form input[type="text"],
+form input[type="password"],
+form select {
     margin-bottom: 20px;
-    color: lightcoral;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
 }
